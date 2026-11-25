@@ -585,7 +585,7 @@ export const App: React.FC = () => {
               </div>
               <div>
                 <span className="text-base font-bold text-white">ParkBnB India</span>
-                <p className="text-[11px] text-slate-500">ParkBnB Technologies India Pvt. Ltd.</p>
+                <p className="text-[11px] text-slate-500">Sole Proprietorship • Bengaluru, India</p>
               </div>
             </div>
 
@@ -608,7 +608,7 @@ export const App: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-[11px]">
             <p>
-              © 2026 ParkBnB India (ParkBnB Technologies India Pvt. Ltd.). All rights reserved.
+              © 2026 ParkBnB India. All rights reserved.
             </p>
             <p className="flex items-center gap-1.5">
               <span>Compliant with MoRTH & Parivahan Vahan 4.0 Standards</span>

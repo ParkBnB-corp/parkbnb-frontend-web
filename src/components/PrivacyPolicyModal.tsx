@@ -23,7 +23,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
             </div>
             <div>
               <h2 className="text-xl font-bold text-white">Privacy Policy</h2>
-              <p className="text-xs text-slate-400">ParkBnB India (ParkBnB Technologies India Pvt. Ltd.) • Last updated: November 2026</p>
+              <p className="text-xs text-slate-400">ParkBnB India • Last updated: November 2026</p>
             </div>
           </div>
           <button
@@ -49,7 +49,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
               1. Introduction
             </h3>
             <p>
-              Welcome to <strong>ParkBnB India</strong> ("we", "our", or "us"). ParkBnB India is operated by ParkBnB Technologies India Pvt. Ltd. This Privacy Policy describes how we collect, store, protect, and handle your information when you use our mobile application (ParkBnB) and related services.
+              Welcome to <strong>ParkBnB India</strong> ("we", "our", or "us"). ParkBnB India is a sole proprietorship based in Bengaluru, Karnataka, India. This Privacy Policy describes how we collect, store, protect, and handle your information when you use our mobile application (ParkBnB) and related services.
             </p>
           </section>
 
@@ -135,7 +135,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
             </h3>
             <p className="text-xs text-slate-400">
               <strong>Grievance Officer:</strong> Manak Wadhwa<br />
-              <strong>Company:</strong> ParkBnB Technologies India Pvt. Ltd. (ParkBnB India)<br />
+              <strong>Entity:</strong> ParkBnB India (Sole Proprietorship)<br />
               <strong>Email:</strong> support@parkbnb.in / privacy@parkbnb.in<br />
               <strong>Registered Office:</strong> Electronic City Phase 1, Bengaluru, Karnataka 560100, India.
             </p>

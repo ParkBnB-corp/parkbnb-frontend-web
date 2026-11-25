@@ -23,7 +23,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
             </div>
             <div>
               <h2 className="text-xl font-bold text-white">Terms & Conditions</h2>
-              <p className="text-xs text-slate-400">ParkBnB India (ParkBnB Technologies India Pvt. Ltd.) • Last updated: November 2026</p>
+              <p className="text-xs text-slate-400">ParkBnB India • Last updated: November 2026</p>
             </div>
           </div>
           <button
@@ -42,7 +42,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
               1. Acceptance of Terms
             </h3>
             <p>
-              By accessing or using the ParkBnB mobile app, website, or associated services provided by <strong>ParkBnB Technologies India Pvt. Ltd. ("ParkBnB India")</strong>, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must discontinue using our services immediately.
+              By accessing or using the ParkBnB mobile app, website, or associated services provided by <strong>ParkBnB India</strong>, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must discontinue using our services immediately.
             </p>
           </section>
 
