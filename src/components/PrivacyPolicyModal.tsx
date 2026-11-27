@@ -123,7 +123,10 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
               5. Your Rights & Data Deletion
             </h3>
             <p>
-              Under Indian law, you have the right to access, rectify, or request permanent deletion of your profile, vehicle garage, and transaction history. To request complete data erasure, email our Data Protection Officer at <a href="mailto:privacy@parkbnb.in" className="text-emerald-400 hover:underline">privacy@parkbnb.in</a> or use the in-app account deletion flow.
+              Under Indian law and Google Play developer policies, you have the right to access, rectify, or request permanent deletion of your profile, vehicle garage, and transaction history. To request complete data erasure and account closure, email our support team at <a href="mailto:support@parkbnb.space" className="text-emerald-400 hover:underline">support@parkbnb.space</a> or visit our dedicated <a href="/delete-account" className="text-emerald-400 hover:underline">Account Deletion Page</a>.
+            </p>
+            <p className="text-xs text-slate-400">
+              Upon receiving your closure request, your login sessions and credentials will be <strong>immediately retracted</strong>. All personal data, vehicle documents, and account records will be permanently purged from our primary database within <strong>90 days of the request</strong>.
             </p>
           </section>
 
@@ -135,8 +138,9 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
             <p className="text-xs text-slate-400">
               <strong>Grievance Officer:</strong> Manak Wadhwa<br />
               <strong>Entity:</strong> ParkBnB India (Sole Proprietorship)<br />
-              <strong>Email:</strong> support@parkbnb.in / privacy@parkbnb.in<br />
-              <strong>Registered Office:</strong> JLPL Galaxy Heights, Mohali, Punjab 140308, India.
+              <strong>Support Email:</strong> <a href="mailto:support@parkbnb.space" className="text-emerald-400 hover:underline">support@parkbnb.space</a> (We reply within 24 hours)<br />
+              <strong>Registered Office:</strong> JLPL Galaxy Heights, Mohali, Punjab 140308, India.<br />
+              <strong>Account Deletion:</strong> <a href="/delete-account" className="text-emerald-400 hover:underline">https://www.parkbnb.space/delete-account</a>
             </p>
           </section>
         </div>

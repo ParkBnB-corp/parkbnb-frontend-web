@@ -111,6 +111,16 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
               These terms shall be governed by and construed in accordance with the laws of the Republic of India. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the competent courts in Punjab, India.
             </p>
           </section>
+
+          <section className="space-y-3">
+            <h3 className="text-base font-semibold text-white flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              7. Customer Support & Account Closure
+            </h3>
+            <p className="text-xs text-slate-400">
+              For platform inquiries, dispute reporting, or account closure requests, please email <a href="mailto:support@parkbnb.space" className="text-emerald-400 hover:underline">support@parkbnb.space</a>. We reply within 24 hours. To request account deletion and data closure, you may also visit our <a href="/delete-account" className="text-emerald-400 hover:underline">Account Deletion Page</a>.
+            </p>
+          </section>
         </div>
 
         {/* Footer */}

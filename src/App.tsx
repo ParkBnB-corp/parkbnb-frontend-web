@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Car,
   Shield,
@@ -25,6 +25,7 @@ import {
 import { PrivacyPolicyModal } from './components/PrivacyPolicyModal';
 import { TermsModal } from './components/TermsModal';
 import { DownloadModal } from './components/DownloadModal';
+import { DeleteAccountPage } from './components/DeleteAccountPage';
 
 export const App: React.FC = () => {
   const [activeShowcaseTab, setActiveShowcaseTab] = useState<'spots' | 'garage' | 'host'>('spots');
@@ -32,6 +33,56 @@ export const App: React.FC = () => {
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   const [isTermsOpen, setIsTermsOpen] = useState(false);
   const [isDownloadOpen, setIsDownloadOpen] = useState(false);
+
+  // Path routing for GitHub Pages and SPA navigation
+  const [currentPath, setCurrentPath] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      const redirectPath = sessionStorage.getItem('redirect_path');
+      if (redirectPath) {
+        sessionStorage.removeItem('redirect_path');
+        window.history.replaceState(null, '', redirectPath);
+        return redirectPath.toLowerCase();
+      }
+      return window.location.pathname.toLowerCase();
+    }
+    return '/';
+  });
+
+  useEffect(() => {
+    const handlePopState = () => {
+      setCurrentPath(window.location.pathname.toLowerCase());
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  const navigateTo = (path: string) => {
+    if (typeof window !== 'undefined') {
+      window.history.pushState({}, '', path);
+      setCurrentPath(path.toLowerCase());
+      window.scrollTo(0, 0);
+    }
+  };
+
+  const isDeleteAccount =
+    currentPath === '/delete-account' ||
+    currentPath === '/delete-account/' ||
+    currentPath.startsWith('/delete-account') ||
+    (typeof window !== 'undefined' && window.location.hash === '#delete-account');
+
+  if (isDeleteAccount) {
+    return (
+      <>
+        <DeleteAccountPage
+          onBackToHome={() => navigateTo('/')}
+          onOpenPrivacy={() => setIsPrivacyOpen(true)}
+          onOpenTerms={() => setIsTermsOpen(true)}
+        />
+        <PrivacyPolicyModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
+        <TermsModal isOpen={isTermsOpen} onClose={() => setIsTermsOpen(false)} />
+      </>
+    );
+  }
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -597,8 +648,18 @@ export const App: React.FC = () => {
               <button onClick={() => setIsTermsOpen(true)} className="hover:text-white transition-colors">
                 Terms & Conditions
               </button>
-              <a href="mailto:support@parkbnb.in" className="hover:text-white transition-colors">
-                Support: support@parkbnb.in
+              <a
+                href="/delete-account"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigateTo('/delete-account');
+                }}
+                className="text-red-400 hover:text-red-300 transition-colors font-medium"
+              >
+                Delete Account
+              </a>
+              <a href="mailto:support@parkbnb.space" className="hover:text-white transition-colors">
+                Support: support@parkbnb.space (Replies in 24h)
               </a>
               <button onClick={() => setIsDownloadOpen(true)} className="text-emerald-400 hover:text-emerald-300 font-semibold">
                 Download App (v1.0.3)
