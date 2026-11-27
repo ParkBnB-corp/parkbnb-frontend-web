@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Account & Data Erasure Policy — ParkBnB India</title>
+    <meta name="description" content="Request account closure and permanent data deletion for ParkBnB India. All personal records deleted within 90 days. Login retracted immediately." />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background-color: #020617;
+        color: #f1f5f9;
+        line-height: 1.6;
+        padding-bottom: 60px;
+      }
+      a { color: inherit; text-decoration: none; }
+      .header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(2, 6, 23, 0.85);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid #1e293b;
+        padding: 0 20px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .brand-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        background: #10b981;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        color: #020617;
+      }
+      .brand-title {
+        font-weight: 800;
+        font-size: 16px;
+        color: #ffffff;
+      }
+      .brand-sub {
+        font-size: 11px;
+        color: #94a3b8;
+      }
+      .back-btn {
+        padding: 8px 14px;
+        border-radius: 8px;
+        background: rgba(30, 41, 59, 0.6);
+        border: 1px solid #334155;
+        font-size: 12px;
+        font-weight: 600;
+        color: #cbd5e1;
+        transition: all 0.2s;
+      }
+      .back-btn:hover {
+        background: #1e293b;
+        color: #ffffff;
+      }
+      .container {
+        max-width: 820px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 14px;
+        border-radius: 9999px;
+        background: rgba(239, 68, 68, 0.1);
+        border: 1px solid rgba(239, 68, 68, 0.25);
+        color: #f87171;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.5px;
+        margin-bottom: 12px;
+      }
+      .lead {
+        color: #94a3b8;
+        font-size: 15px;
+        margin-bottom: 32px;
+      }
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+      .card {
+        background: rgba(15, 23, 42, 0.7);
+        border: 1px solid #1e293b;
+        border-radius: 16px;
+        padding: 24px;
+      }
+      .card-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 14px;
+        font-size: 18px;
+      }
+      .card-icon.red { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+      .card-icon.amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+      .card-icon.green { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+      .card-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 8px;
+      }
+      .card-desc {
+        font-size: 12px;
+        color: #94a3b8;
+        line-height: 1.5;
+      }
+      .steps-box {
+        background: rgba(15, 23, 42, 0.5);
+        border: 1px solid #334155;
+        border-radius: 20px;
+        padding: 28px;
+        margin-bottom: 32px;
+      }
+      .steps-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 18px;
+      }
+      .step-item {
+        display: flex;
+        gap: 14px;
+        padding: 14px;
+        border-radius: 12px;
+        background: rgba(2, 6, 23, 0.6);
+        border: 1px solid #1e293b;
+        margin-bottom: 12px;
+      }
+      .step-num {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: rgba(16, 185, 129, 0.2);
+        color: #34d399;
+        font-weight: 700;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .step-text {
+        font-size: 13px;
+        color: #cbd5e1;
+      }
+      .step-text strong {
+        color: #ffffff;
+      }
+      .cta-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #dc2626;
+        color: #ffffff;
+        padding: 14px 24px;
+        border-radius: 12px;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 10px;
+        transition: background 0.2s;
+      }
+      .cta-btn:hover {
+        background: #b91c1c;
+      }
+      .scope-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+      .scope-card {
+        background: rgba(15, 23, 42, 0.6);
+        border: 1px solid #1e293b;
+        border-radius: 16px;
+        padding: 20px;
+      }
+      .scope-header {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+      .scope-header.green { color: #34d399; }
+      .scope-header.amber { color: #fbbf24; }
+      .scope-list {
+        list-style: none;
+        font-size: 12px;
+        color: #cbd5e1;
+      }
+      .scope-list li {
+        margin-bottom: 8px;
+        padding-left: 14px;
+        position: relative;
+      }
+      .scope-list li::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: #10b981;
+      }
+      .legal-box {
+        background: rgba(15, 23, 42, 0.4);
+        border: 1px solid #1e293b;
+        border-radius: 16px;
+        padding: 20px;
+        font-size: 12px;
+        color: #94a3b8;
+      }
+      .legal-box strong { color: #cbd5e1; }
+      .footer {
+        max-width: 820px;
+        margin: 40px auto 0;
+        padding: 20px 20px 0;
+        border-top: 1px solid #1e293b;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        font-size: 12px;
+        color: #64748b;
+      }
+      .footer a:hover { color: #94a3b8; }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="brand">
+        <div class="brand-icon">P</div>
+        <div>
+          <div class="brand-title">ParkBnB India</div>
+          <div class="brand-sub">Account & Data Governance</div>
+        </div>
+      </a>
+      <a href="/" class="back-btn">← Back to Home</a>
+    </header>
+
+    <main class="container">
+      <div class="badge">Account Deletion & Data Erasure Policy</div>
+      <h1>Delete Your ParkBnB Account & Associated Data</h1>
+      <p class="lead">
+        ParkBnB India is committed to user data privacy and Google Play developer compliance. You can permanently close your account and delete all personal records using the instructions below.
+      </p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon red">🔒</div>
+          <div class="card-title">Login Retracted Immediately</div>
+          <div class="card-desc">
+            Your login sessions, authentication tokens, and mobile app access are <strong>immediately retracted and deactivated</strong> upon receipt of your request.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon amber">⏳</div>
+          <div class="card-title">Data Deleted in 90 Days</div>
+          <div class="card-desc">
+            All personal identifiers, vehicle garage fleet data, and documents are permanently purged from primary servers within <strong>90 days of request</strong>.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon green">✉️</div>
+          <div class="card-title">Reply in 24 Hours</div>
+          <div class="card-desc">
+            Submit your closure request to <strong>support@parkbnb.space</strong>. Our support team will review and reply with confirmation within <strong>24 hours</strong>.
+          </div>
+        </div>
+      </div>
+
+      <div class="steps-box">
+        <div class="steps-title">How to Request Account Closure</div>
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-text">
+            <strong>Send an Email to support@parkbnb.space:</strong><br />
+            Email our support desk from your registered email address with the subject line <code>Account Deletion Request - [Your Registered Email or Phone]</code>.
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-text">
+            <strong>Immediate Login Revocation & 24h Response:</strong><br />
+            Our team will reply within <strong>24 hours</strong> to verify and immediately revoke your login tokens and active sessions.
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-text">
+            <strong>Permanent Data Purge within 90 Days:</strong><br />
+            Profile particulars, vehicles, and documents will be completely and irreversibly purged from our database within 90 days.
+          </div>
+        </div>
+
+        <a
+          href="mailto:support@parkbnb.space?subject=Account%20Deletion%20Request%20-%20ParkBnB%20India&body=Hello%20ParkBnB%20Support%2C%0A%0APlease%20permanently%20delete%20my%20ParkBnB%20account%20and%20all%20associated%20data.%0A%0ARegistered%20Email%3A%20%0ARegistered%20Phone%3A%20%0AReason%20(optional)%3A%20%0A%0AI%20understand%20that%20my%20login%20access%20will%20immediately%20be%20retracted%20and%20my%20data%20will%20be%20permanently%20deleted%20within%2090%20days.%0A%0AThank%20you."
+          class="cta-btn"
+        >
+          Email support@parkbnb.space to Delete Account
+        </a>
+      </div>
+
+      <div class="scope-grid">
+        <div class="scope-card">
+          <div class="scope-header green">✓ Permanently Deleted (within 90 days)</div>
+          <ul class="scope-list">
+            <li>User profile name, email, phone number, and avatar</li>
+            <li>Vehicle Garage fleet data and digital document uploads</li>
+            <li>Saved private parking bays and host clearance photos</li>
+            <li>Location search history and gate pass QR logs</li>
+            <li>Device push notification tokens and authentication credentials</li>
+          </ul>
+        </div>
+        <div class="scope-card">
+          <div class="scope-header amber">⚠ Retained up to 90 Days (Statutory Law)</div>
+          <ul class="scope-list">
+            <li>Invoiced financial transaction records & GST receipts (strictly for tax & audit compliance)</li>
+            <li>Resolved payment dispute logs to prevent fraudulent chargebacks</li>
+            <li>Anonymized after 90 days as required under Indian legal frameworks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="legal-box">
+        <strong>Entity & Legal Information:</strong><br />
+        <strong>Entity:</strong> ParkBnB India (Sole Proprietorship)<br />
+        <strong>Registered Office:</strong> JLPL Galaxy Heights, Mohali, Punjab 140308, India.<br />
+        <strong>Jurisdiction:</strong> Punjab, India.<br />
+        <strong>Official Contact:</strong> <a href="mailto:support@parkbnb.space" style="color: #34d399;">support@parkbnb.space</a> (We reply within 24 hours).
+      </div>
+
+      <div class="footer">
+        <div>© 2026 ParkBnB India. All rights reserved.</div>
+        <div>
+          <a href="/">Home</a> •
+          <a href="mailto:support@parkbnb.space">support@parkbnb.space</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
