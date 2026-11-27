@@ -74,6 +74,9 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
               <li>
                 <strong>Host Information:</strong> Parking bay photographs, address, clearance height, and payout wallet identifiers if you register as a host.
               </li>
+              <li>
+                <strong>Optional Device Contacts:</strong> If you explicitly grant optional permission to access your device contacts, contact names, phone numbers, and email addresses are securely synced as CSV to your personal account storage to facilitate instant parking pass sharing, neighbor invitations, and referral rewards. Contacts are never shared with third parties or contacted without your explicit action.
+              </li>
             </ul>
           </section>
 
