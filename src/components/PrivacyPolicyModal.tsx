@@ -66,7 +66,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
                 <strong>Precise & Approximate Location:</strong> With your explicit permission, we collect GPS coordinates to discover nearby parking spots, calculate walking distance, and provide turn-by-turn navigation to reserved bays. Location is processed in real time and is never sold.
               </li>
               <li>
-                <strong>Vehicle Data:</strong> Registration plate numbers (e.g. KA51JP2542) entered by you to verify vehicle class, insurance validity, and PUC status via government-authorized MoRTH Vahan 4.0 APIs.
+                <strong>Vehicle Data:</strong> Registration plate numbers and vehicle profiles entered by you to manage your virtual garage and identify your vehicle at reserved parking spots.
               </li>
               <li>
                 <strong>Transaction Data:</strong> Parking booking records, bay reservations, gate pass QR tokens, and PhonePe payment transaction references (we do not store raw credit card numbers or UPI PINs).
@@ -92,8 +92,8 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
                 <p className="text-xs text-slate-400">Issuing secure QR codes for contactless security check-in at residential societies.</p>
               </div>
               <div className="p-3 bg-slate-800/60 rounded-xl border border-slate-700/50">
-                <p className="font-medium text-white text-xs mb-1">MoRTH Compliance</p>
-                <p className="text-xs text-slate-400">Verifying vehicle credentials to ensure lawful parking access.</p>
+                <p className="font-medium text-white text-xs mb-1">Virtual Garage Organization</p>
+                <p className="text-xs text-slate-400">Managing user vehicle profiles for streamlined bay allocation and security gate clearance.</p>
               </div>
               <div className="p-3 bg-slate-800/60 rounded-xl border border-slate-700/50">
                 <p className="font-medium text-white text-xs mb-1">Host Payouts</p>
@@ -113,7 +113,6 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
             <ul className="list-disc pl-5 space-y-1 text-slate-300 text-xs">
               <li><strong>PhonePe & Banking Partners:</strong> For processing digital UPI/card payments.</li>
               <li><strong>Google Maps Platform:</strong> For map rendering and geographic routing.</li>
-              <li><strong>MoRTH Parivahan Gateways:</strong> For real-time vehicle RC status validation.</li>
               <li><strong>Google AdMob:</strong> For non-personalized sponsored banner and interstitial alerts in free tiers.</li>
             </ul>
           </section>

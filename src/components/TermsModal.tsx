@@ -42,7 +42,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
               1. Acceptance of Terms
             </h3>
             <p>
-              By accessing or using the ParkBnB mobile app, website, or associated services provided by <strong>ParkBnB India</strong>, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must discontinue using our services immediately.
+              By accessing or using the ParkBnB mobile app, website, or associated services provided by <strong>ParkBnB India (Sole Proprietorship)</strong> based in Bengaluru, Karnataka, India, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must discontinue using our services immediately.
             </p>
           </section>
 
@@ -77,7 +77,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
                 <strong>Guaranteed Availability:</strong> Once a driver makes a confirmed booking on ParkBnB, the host must ensure the bay is vacant, accessible, and free of obstruction for the entire reserved duration.
               </li>
               <li>
-                <strong>Earnings Settlement:</strong> Payouts for completed parking sessions are automatically credited to the host's verified wallet after deduction of ParkBnB platform facilitation charges (10%).
+                <strong>Earnings Settlement:</strong> Payouts for completed parking sessions are automatically credited to the host's verified wallet after deduction of applicable platform facilitation charges.
               </li>
             </ul>
           </section>
@@ -98,7 +98,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
               5. Limitation of Liability
             </h3>
             <p className="text-xs text-slate-400">
-              ParkBnB India acts strictly as a technology marketplace connecting parking spot owners with drivers. ParkBnB India is not liable for vehicle theft, damage, natural wear and tear, or disputes between hosts and drivers occurring on private premises. Drivers are required to maintain active comprehensive motor vehicle insurance under Indian motor laws.
+              ParkBnB India is a sole proprietorship that acts strictly as a technology marketplace connecting parking spot owners with drivers. ParkBnB India is not liable for vehicle theft, damage, natural wear and tear, or disputes between hosts and drivers occurring on private premises. Drivers are required to maintain active comprehensive motor vehicle insurance under Indian motor laws.
             </p>
           </section>
 

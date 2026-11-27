@@ -48,15 +48,15 @@ export const App: React.FC = () => {
     },
     {
       q: 'Is my vehicle safe in ParkBnB spots?',
-      a: 'Yes! All ParkBnB listed bays are pre-screened with physical clearance checks, CCTV surveillance, and gated security access. Drivers are verified using official MoRTH Vahan 4.0 government RC records.',
+      a: 'Yes! All ParkBnB listed bays are pre-screened with physical clearance checks, CCTV surveillance, and gated security access. Drivers and hosts are verified on the platform for mutual security.',
     },
     {
       q: 'What is the cancellation and refund policy?',
       a: 'You can cancel any booking before the session start time for a 100% instant refund directly to your ParkBnB wallet or original UPI payment method.',
     },
     {
-      q: 'How does the government MoRTH Vahan 4.0 RC check work?',
-      a: 'When you add your vehicle number in the ParkBnB Garage, our system connects securely with authorized Ministry of Road Transport and Highways (MoRTH) databases to verify vehicle fitness, insurance expiry, and PUC status.',
+      q: 'How does the digital Gate Pass QR code work?',
+      a: 'Upon booking a bay, ParkBnB generates a dynamic, encrypted Gate Pass QR code. Simply show this to security guards or scan at society checkpoints for instant, contactless parking clearance.',
     },
   ];
 
@@ -118,7 +118,7 @@ export const App: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 shadow-inner mb-6">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-xs font-semibold text-slate-300">
-              Official Platform of ParkBnB India • Registered Entity
+              Official Platform of ParkBnB India • Sole Proprietorship
             </span>
           </div>
 
@@ -132,7 +132,7 @@ export const App: React.FC = () => {
 
           {/* Subtitle */}
           <p className="mt-6 text-base sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-            Discover, reserve, and enter verified private parking bays in seconds. Pre-book driveway and stilt bays with instant QR gate passes. Manage your garage fleet with official MoRTH Vahan 4.0 government RC verification.
+            Discover, reserve, and enter verified private parking bays in seconds. Pre-book driveway and stilt bays with instant QR gate passes. Manage your vehicle garage with streamlined digital access.
           </p>
 
           {/* Hero CTAs */}
@@ -142,7 +142,7 @@ export const App: React.FC = () => {
               className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-sm sm:text-base transition-all shadow-xl shadow-emerald-500/25 flex items-center justify-center gap-3 active:scale-98"
             >
               <Smartphone className="w-5 h-5" />
-              <span>Download Android App (v1.0.0)</span>
+              <span>Download Android App (v1.0.3)</span>
             </button>
 
             <a
@@ -158,7 +158,7 @@ export const App: React.FC = () => {
           {/* Store Availability Pill */}
           <div className="mt-8 flex items-center justify-center gap-2 text-xs text-slate-400">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-            <span>Target SDK 34 • Submitted to Google Play Store • MoRTH Vahan 4.0 Certified</span>
+            <span>Target SDK 36 • Android 16 Ready • Google Play In Review</span>
           </div>
 
           {/* Key Metrics Bar */}
@@ -176,8 +176,8 @@ export const App: React.FC = () => {
               <p className="text-xs text-slate-400 mt-1">Driver Trust Score</p>
             </div>
             <div className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80">
-              <p className="text-3xl font-extrabold text-teal-400">100%</p>
-              <p className="text-xs text-slate-400 mt-1">MoRTH Vahan 4.0</p>
+              <p className="text-3xl font-extrabold text-teal-400">99.9%</p>
+              <p className="text-xs text-slate-400 mt-1">Booking Reliability</p>
             </div>
           </div>
         </div>
@@ -220,7 +220,7 @@ export const App: React.FC = () => {
               }`}
             >
               <ShieldCheck className="w-4 h-4" />
-              <span>MoRTH Vahan 4.0 Garage</span>
+              <span>Smart Virtual Garage</span>
             </button>
             <button
               onClick={() => setActiveShowcaseTab('host')}
@@ -292,24 +292,24 @@ export const App: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div className="space-y-4">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-teal-500/10 text-teal-400 text-xs font-semibold border border-teal-500/20">
-                    <ShieldCheck className="w-4 h-4" /> Government Database Verified
+                    <ShieldCheck className="w-4 h-4" /> Smart Vehicle Garage
                   </div>
-                  <h3 className="text-2xl font-bold text-white">MoRTH Vahan 4.0 Garage</h3>
+                  <h3 className="text-2xl font-bold text-white">Smart Virtual Garage</h3>
                   <p className="text-slate-400 text-sm leading-relaxed">
-                    Store your family vehicles with official credentials. Simply enter your registration number to fetch authenticated RTO records, engine/chassis numbers, insurance expiry, and PUC validity.
+                    Store and organize your vehicles in one secure dashboard. Keep your vehicle registration numbers, models, and parking preferences ready for rapid one-tap parking booking.
                   </p>
                   <ul className="space-y-2 text-xs text-slate-300">
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                      <span>Real-time insurance status and expiry reminders</span>
+                      <span>One-tap vehicle selection during spot booking</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                      <span>Valid PUC certificate tracking</span>
+                      <span>Vehicle height and size matching for perfect bay fit</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-4 h-4 text-emerald-400 shrink-0" />
-                      <span>Zero fallback or fake pictures — pure authenticated records</span>
+                      <span>Seamless association with reserved parking bays and security gate passes</span>
                     </li>
                   </ul>
                 </div>
@@ -317,25 +317,25 @@ export const App: React.FC = () => {
                 <div className="p-6 bg-slate-950 border border-slate-800 rounded-2xl space-y-4">
                   <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                     <div>
-                      <p className="text-xs font-bold text-teal-400">VERIFIED GARAGE VEHICLE</p>
+                      <p className="text-xs font-bold text-teal-400">REGISTERED VEHICLE</p>
                       <p className="text-base font-bold text-white">KA51JP2542 • Honda Activa</p>
                     </div>
                     <span className="px-2.5 py-1 bg-teal-500/10 text-teal-300 text-[10px] font-bold rounded-full border border-teal-500/30">
-                      VAHAN 4.0
+                      SAVED
                     </span>
                   </div>
                   <div className="p-4 bg-slate-900 rounded-xl border border-slate-800 space-y-2.5 text-xs">
                     <div className="flex justify-between text-slate-300">
-                      <span className="text-slate-500">RTO:</span>
-                      <span className="font-semibold text-white">KA-51 Electronic City, Bengaluru</span>
+                      <span className="text-slate-500">Location:</span>
+                      <span className="font-semibold text-white">Electronic City, Bengaluru</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
-                      <span className="text-slate-500">Insurance:</span>
-                      <span className="font-semibold text-emerald-400">HDFC ERGO (Valid till 2027)</span>
+                      <span className="text-slate-500">Vehicle Type:</span>
+                      <span className="font-semibold text-emerald-400">Two Wheeler (EV / Scooter)</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
-                      <span className="text-slate-500">PUC Status:</span>
-                      <span className="font-semibold text-emerald-400">VALID (Valid till 2027)</span>
+                      <span className="text-slate-500">Pass Clearance:</span>
+                      <span className="font-semibold text-emerald-400">Standard Bay Access</span>
                     </div>
                     <div className="flex justify-between text-slate-300">
                       <span className="text-slate-500">Fuel:</span>
@@ -512,7 +512,7 @@ export const App: React.FC = () => {
               <div className="grid grid-cols-2 gap-4 pt-2 text-xs text-slate-300">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                  <span>100% MoRTH Verified Drivers</span>
+                  <span>Verified Drivers & Hosts</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />
@@ -601,7 +601,7 @@ export const App: React.FC = () => {
                 Support: support@parkbnb.in
               </a>
               <button onClick={() => setIsDownloadOpen(true)} className="text-emerald-400 hover:text-emerald-300 font-semibold">
-                Download App (v1.0.0)
+                Download App (v1.0.3)
               </button>
             </div>
           </div>
@@ -611,7 +611,7 @@ export const App: React.FC = () => {
               © 2026 ParkBnB India. All rights reserved.
             </p>
             <p className="flex items-center gap-1.5">
-              <span>Compliant with MoRTH & Parivahan Vahan 4.0 Standards</span>
+              <span>Built for Indian Urban Mobility</span>
               <span>•</span>
               <span>ISO 27001 Certified Security</span>
             </p>

@@ -38,7 +38,7 @@ export const AdAnalyticsView: React.FC<Props> = ({ analytics }) => {
           </div>
           <h2 className="text-xl font-bold text-white tracking-tight">App Monetization & Ad Revenue Engine</h2>
           <p className="text-xs text-slate-400 mt-1">
-            Covering vendor API costs (Vahan 4.0, FASTag, Parivahan) via targeted interstitials and rewarded video ads.
+            Covering cloud infrastructure costs via targeted interstitials and rewarded video ads.
           </p>
         </div>
 
@@ -106,9 +106,9 @@ export const AdAnalyticsView: React.FC<Props> = ({ analytics }) => {
             </span>
             <span className="text-xs font-mono text-slate-400">Est. ₹0.10 / view</span>
           </div>
-          <h4 className="text-sm font-bold text-white">RC Search & External Lookups</h4>
+          <h4 className="text-sm font-bold text-white">Vehicle Management & Garage Tools</h4>
           <p className="text-xs text-slate-400 leading-relaxed">
-            Displayed immediately before fetching vehicle details from Parivahan/Vahan 4.0 or FASTag balance checks. Includes an anti-spam cooldown of 45 seconds.
+            Displayed when managing vehicles or accessing premium garage tools. Includes an anti-spam cooldown of 45 seconds.
           </p>
           <div className="pt-2 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
             Trigger: <code className="text-emerald-400 font-mono">RC_SEARCH</code>

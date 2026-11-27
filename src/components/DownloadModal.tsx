@@ -66,22 +66,21 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose })
               <div className="flex items-center gap-2">
                 <Download className="w-4 h-4 text-emerald-400" />
                 <span className="text-xs font-bold text-emerald-300 uppercase tracking-wider">
-                  Direct Release APK (v1.0.0)
+                  Direct Release APK (v1.0.3)
                 </span>
               </div>
-              <span className="text-[11px] font-mono text-slate-400">85 MB</span>
+              <span className="text-[11px] font-mono text-slate-400">88 MB</span>
             </div>
             <p className="text-xs text-slate-300">
-              Download the standalone signed release APK immediately to test all live parking bay booking, host hub, and MoRTH RC features.
+              Download the standalone signed release APK immediately to experience live parking bay booking, QR gate pass check-in, and the host earnings hub.
             </p>
             <a
-              href="https://github.com/ParkBnB-corp/parkbnb-frontend-mobile/releases"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/ParkBnB-v1.0.3-Live.apk"
+              download="ParkBnB-v1.0.3-Live.apk"
               className="w-full flex items-center justify-center gap-2 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs rounded-xl transition-all shadow-lg shadow-emerald-900/30"
             >
               <Download className="w-4 h-4" />
-              Download Live APK from GitHub Releases
+              Download Live APK (v1.0.3)
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>
@@ -89,7 +88,7 @@ export const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose })
           {/* Security Guarantee */}
           <div className="flex items-center gap-2.5 text-xs text-slate-400 justify-center">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>Target SDK 34 • SHA-256 Verified • 100% Virus-Free</span>
+            <span>Target SDK 36 • Android 16 Ready • 100% Virus-Free</span>
           </div>
         </div>
       </div>
