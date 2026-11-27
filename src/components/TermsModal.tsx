@@ -42,7 +42,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
               1. Acceptance of Terms
             </h3>
             <p>
-              By accessing or using the ParkBnB mobile app, website, or associated services provided by <strong>ParkBnB India (Sole Proprietorship)</strong> based in Bengaluru, Karnataka, India, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must discontinue using our services immediately.
+              By accessing or using the ParkBnB mobile app, website, or associated services provided by <strong>ParkBnB India (Sole Proprietorship)</strong> based in Mohali, Punjab, India, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, you must discontinue using our services immediately.
             </p>
           </section>
 
@@ -108,7 +108,7 @@ export const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
               6. Governing Law & Dispute Resolution
             </h3>
             <p>
-              These terms shall be governed by and construed in accordance with the laws of the Republic of India. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the competent courts in Bengaluru, Karnataka, India.
+              These terms shall be governed by and construed in accordance with the laws of the Republic of India. Any disputes arising out of or in connection with these terms shall be subject to the exclusive jurisdiction of the competent courts in Punjab, India.
             </p>
           </section>
         </div>

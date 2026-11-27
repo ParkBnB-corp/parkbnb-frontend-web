@@ -585,7 +585,7 @@ export const App: React.FC = () => {
               </div>
               <div>
                 <span className="text-base font-bold text-white">ParkBnB India</span>
-                <p className="text-[11px] text-slate-500">Sole Proprietorship • Bengaluru, India</p>
+                <p className="text-[11px] text-slate-500">Sole Proprietorship • Mohali, Punjab, India</p>
               </div>
             </div>
 
@@ -613,7 +613,7 @@ export const App: React.FC = () => {
             <p className="flex items-center gap-1.5">
               <span>Built for Indian Urban Mobility</span>
               <span>•</span>
-              <span>ISO 27001 Certified Security</span>
+              <span>Secure & Encrypted Platform</span>
             </p>
           </div>
         </div>

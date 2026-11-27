@@ -39,7 +39,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
           <div className="p-4 bg-emerald-950/30 border border-emerald-500/20 rounded-xl flex items-start gap-3">
             <Lock className="w-5 h-5 text-emerald-400 mt-0.5 shrink-0" />
             <p className="text-xs text-emerald-200/90">
-              Your privacy is paramount. ParkBnB India complies strictly with the Digital Personal Data Protection Act (DPDP Act 2023), ISO 27001 data protection standards, and Google Play Store Developer Policies.
+              Your privacy is paramount. ParkBnB India is committed to protecting your personal data and complying with Google Play Store Developer Policies and applicable Indian privacy laws.
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
               1. Introduction
             </h3>
             <p>
-              Welcome to <strong>ParkBnB India</strong> ("we", "our", or "us"). ParkBnB India is a sole proprietorship based in Bengaluru, Karnataka, India. This Privacy Policy describes how we collect, store, protect, and handle your information when you use our mobile application (ParkBnB) and related services.
+              Welcome to <strong>ParkBnB India</strong> ("we", "our", or "us"). ParkBnB India is a sole proprietorship based in Mohali, Punjab, India. This Privacy Policy describes how we collect, store, protect, and handle your information when you use our mobile application (ParkBnB) and related services.
             </p>
           </section>
 
@@ -136,7 +136,7 @@ export const PrivacyPolicyModal: React.FC<PrivacyPolicyModalProps> = ({ isOpen, 
               <strong>Grievance Officer:</strong> Manak Wadhwa<br />
               <strong>Entity:</strong> ParkBnB India (Sole Proprietorship)<br />
               <strong>Email:</strong> support@parkbnb.in / privacy@parkbnb.in<br />
-              <strong>Registered Office:</strong> Electronic City Phase 1, Bengaluru, Karnataka 560100, India.
+              <strong>Registered Office:</strong> JLPL Galaxy Heights, Mohali, Punjab 140308, India.
             </p>
           </section>
         </div>
